@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Video, Phone, Menu } from "lucide-react";
+import hdtaiLogo from "@assets/logo_cty-removebg_1754316937722.png";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,9 +28,11 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
-              <Video className="text-white" size={20} />
-            </div>
+            <img 
+              src={hdtaiLogo} 
+              alt="HDT AI Logo" 
+              className="w-10 h-10 object-contain"
+            />
             <div>
               <h1 className="text-xl font-bold text-slate-900">HDT AI</h1>
               <p className="text-xs text-slate-600">CapCut Mastery</p>

@@ -1,4 +1,5 @@
 import { Video } from "lucide-react";
+import hdtaiLogo from "@assets/logo_cty-removebg_1754316937722.png";
 
 export default function Footer() {
   return (
@@ -7,9 +8,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 gradient-primary rounded-xl flex items-center justify-center">
-                <Video className="text-white" size={24} />
-              </div>
+              <img 
+                src={hdtaiLogo} 
+                alt="HDT AI Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
                 <h2 className="text-2xl font-bold">HDT AI</h2>
                 <p className="text-slate-400 text-sm">Công ty cổ phần thương mại điện tử HDT AI</p>
