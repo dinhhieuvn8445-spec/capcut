@@ -74,19 +74,19 @@ export class MemStorage implements IStorage {
     // Sample instructors
     const instructor1: Instructor = {
       id: randomUUID(),
-      name: "Hoàng Tú",
+      name: "Thanh Hải",
       title: "Giảng Viên HDTAI",
-      description: "Đã giảng dạy về các công cụ hỗ trợ Marketing, các công cụ AI như Leonardo AI, KlingAI, Digen, HeyGen, D-ID, Video-Gen... và các công cụ hỗ trợ viết content, xử lý hình ảnh, videos, âm thanh.",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+      description: "Xử lý kỹ thuật từ chuyển giọng, sub auto, auto đăng video, đến tạo chatbot trả lời comment, hệ thống hóa quy trình dựng & đăng video. Thành thạo Make, ChatGPT, API, Google Sheets.",
+      avatar: "/assets/vietnamese_young_man_1754316721344.png",
       createdAt: new Date(),
     };
 
     const instructor2: Instructor = {
       id: randomUUID(),
-      name: "Thanh Hải",
+      name: "Hoàng Tú",
       title: "Giảng Viên HDTAI",
-      description: "Xử lý kỹ thuật từ chuyển giọng, sub auto, auto đăng video, đến tạo chatbot trả lời comment, hệ thống hóa quy trình dựng & đăng video. Thành thạo Make, ChatGPT, API, Google Sheets.",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+      description: "Đã giảng dạy về các công cụ hỗ trợ Marketing, các công cụ AI như Leonardo AI, KlingAI, Digen, HeyGen, D-ID, Video-Gen... và các công cụ hỗ trợ viết content, xử lý hình ảnh, videos, âm thanh.",
+      avatar: "/assets/vietnamese_young_man_3_1754316721344.png",
       createdAt: new Date(),
     };
 
@@ -95,7 +95,7 @@ export class MemStorage implements IStorage {
       name: "HPT",
       title: "Giảng Viên HDTAI",
       description: "Người đứng sau hàng loạt video AI viral, chuyên kết hợp các công cụ như HeyGen, Suno, Pika Labs, CapCut, Canva, ChatGPT... để tạo nên hệ sinh thái nội dung toàn diện.",
-      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&h=200",
+      avatar: "/assets/thịnh công tử_1754316736766.png",
       createdAt: new Date(),
     };
 
