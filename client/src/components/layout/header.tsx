@@ -31,7 +31,7 @@ export default function Header() {
             <img 
               src={hdtaiLogo} 
               alt="HDT AI Logo" 
-              className="w-14 h-14 object-contain"
+              className="w-20 h-20 object-contain"
             />
             <div>
               <h1 className="text-xl font-bold text-slate-900">HDT AI</h1>
