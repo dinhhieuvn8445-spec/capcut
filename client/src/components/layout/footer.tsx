@@ -11,7 +11,7 @@ export default function Footer() {
               <img 
                 src={hdtaiLogo} 
                 alt="HDT AI Logo" 
-                className="w-12 h-12 object-contain"
+                className="w-16 h-16 object-contain"
               />
               <div>
                 <h2 className="text-2xl font-bold">HDT AI</h2>
