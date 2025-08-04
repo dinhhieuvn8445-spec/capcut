@@ -1,24 +1,28 @@
+import thanhHaiAvatar from "@assets/vietnamese_young_man_1754316721344.png";
+import hoangTuAvatar from "@assets/vietnamese_young_man_3_1754316721344.png";
+import hptAvatar from "@assets/thịnh công tử_1754316736766.png";
+
 export default function InstructorsSection() {
   const instructors = [
     {
       name: "Thanh Hải",
       title: "Giảng Viên HDTAI",
       description: "Xử lý kỹ thuật từ chuyển giọng, sub auto, auto đăng video, đến tạo chatbot trả lời comment, hệ thống hóa quy trình dựng & đăng video. Thành thạo Make, ChatGPT, API, Google Sheets.",
-      avatar: "@assets/vietnamese_young_man_1754316721344.png",
+      avatar: thanhHaiAvatar,
       borderColor: "border-blue-500/20"
     },
     {
       name: "Hoàng Tú",
       title: "Giảng Viên HDTAI",
       description: "Đã giảng dạy về các công cụ hỗ trợ Marketing, các công cụ AI như Leonardo AI, KlingAI, Digen, HeyGen, D-ID, Video-Gen... và các công cụ hỗ trợ viết content, xử lý hình ảnh, videos, âm thanh.",
-      avatar: "@assets/vietnamese_young_man_3_1754316721344.png",
+      avatar: hoangTuAvatar,
       borderColor: "border-orange-500/20"
     },
     {
       name: "HPT",
       title: "Giảng Viên HDTAI",
       description: "Người đứng sau hàng loạt video AI viral, chuyên kết hợp các công cụ như HeyGen, Suno, Pika Labs, CapCut, Canva, ChatGPT... để tạo nên hệ sinh thái nội dung toàn diện.",
-      avatar: "@assets/thịnh công tử_1754316736766.png",
+      avatar: hptAvatar,
       borderColor: "border-green-500/20"
     }
   ];
