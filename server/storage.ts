@@ -38,6 +38,7 @@ export class MemStorage implements IStorage {
       id: randomUUID(),
       name: "CapCut Cơ Bản",
       price: 500000,
+      originalPrice: null,
       description: "Khóa học CapCut cơ bản dành cho người mới bắt đầu",
       features: ["Hướng dẫn cơ bản CapCut", "Cắt ghép video đơn giản", "Thêm nhạc và hiệu ứng", "Hỗ trợ trong 30 ngày"],
       isPopular: false,
@@ -48,6 +49,7 @@ export class MemStorage implements IStorage {
       id: randomUUID(),
       name: "CapCut Nâng Cao",
       price: 500000,
+      originalPrice: null,
       description: "Khóa học CapCut nâng cao cho người muốn chuyên nghiệp",
       features: ["Tất cả tính năng cơ bản", "Hiệu ứng chuyên nghiệp", "Chuyển giọng AI", "Phụ đề tự động", "Hỗ trợ trọn đời"],
       isPopular: true,
@@ -113,7 +115,13 @@ export class MemStorage implements IStorage {
 
   async createCourse(insertCourse: InsertCourse): Promise<Course> {
     const id = randomUUID();
-    const course: Course = { ...insertCourse, id, createdAt: new Date() };
+    const course: Course = { 
+      ...insertCourse, 
+      id, 
+      createdAt: new Date(),
+      originalPrice: insertCourse.originalPrice ?? null,
+      isPopular: insertCourse.isPopular ?? false
+    };
     this.courses.set(id, course);
     return course;
   }
@@ -129,7 +137,12 @@ export class MemStorage implements IStorage {
 
   async createInstructor(insertInstructor: InsertInstructor): Promise<Instructor> {
     const id = randomUUID();
-    const instructor: Instructor = { ...insertInstructor, id, createdAt: new Date() };
+    const instructor: Instructor = { 
+      ...insertInstructor, 
+      id, 
+      createdAt: new Date(),
+      avatar: insertInstructor.avatar ?? null
+    };
     this.instructors.set(id, instructor);
     return instructor;
   }
@@ -145,7 +158,14 @@ export class MemStorage implements IStorage {
 
   async createRegistration(insertRegistration: InsertRegistration): Promise<Registration> {
     const id = randomUUID();
-    const registration: Registration = { ...insertRegistration, id, createdAt: new Date() };
+    const registration: Registration = { 
+      ...insertRegistration, 
+      id, 
+      createdAt: new Date(),
+      email: insertRegistration.email ?? null,
+      courseId: insertRegistration.courseId ?? null,
+      message: insertRegistration.message ?? null
+    };
     this.registrations.set(id, registration);
     return registration;
   }

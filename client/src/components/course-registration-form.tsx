@@ -133,7 +133,7 @@ export default function CourseRegistrationForm() {
           render={({ field }) => (
             <FormItem>
               <FormLabel className="text-white">Chọn khóa học quan tâm</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
+              <Select onValueChange={field.onChange} defaultValue={field.value || ""}>
                 <FormControl>
                   <SelectTrigger className="bg-white/10 backdrop-blur-sm border-white/20 text-white focus:ring-2 focus:ring-orange-400">
                     <SelectValue placeholder="-- Chọn khóa học --" />
@@ -161,6 +161,7 @@ export default function CourseRegistrationForm() {
               <FormControl>
                 <Textarea
                   {...field}
+                  value={field.value || ""}
                   rows={4}
                   placeholder="Chia sẻ mong muốn hoặc câu hỏi của bạn..."
                   className="bg-white/10 backdrop-blur-sm border-white/20 text-white placeholder-white/60 focus:ring-2 focus:ring-orange-400 resize-none"
